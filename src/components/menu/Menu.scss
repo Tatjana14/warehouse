@@ -1,0 +1,73 @@
+@import '../../sass/basis/fonts';
+@import '../../sass/abstracts/mixins';
+@import '../../sass/abstracts/vars';
+
+.menu,
+.menuActive{
+    @include flexColumn();
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(20, 32, 56, 0.9);
+    opacity: 1.5;
+    transition: all .5s ease ;
+    -webkit-transition: all .5s ease ;
+    -moz-transition: all .5s ease ;
+    -ms-transition: all .5s ease ;
+    -o-transition: all .5s ease ;
+    .btnClose{
+        position: absolute;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        top: 25px;
+        right: 20px;
+    }
+    .title{
+        font-family: 'Roboto Condensed', sans-serif;;
+        color:  #979797;
+        font-size: 17px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        padding-left: 25px;
+        padding-top: 85px;
+    }
+    .menuList{
+        align-self: center;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(120px, auto));
+        grid-template-rows: repeat(4, minmax(120px, auto));
+        column-gap: 55px;
+        .menuItem{
+            @include flexColumn($align-items:center);
+            justify-content: center;
+            .menuLink{
+                margin-top: 20px;
+                font-family: 'Roboto' , sans-serif;
+                color:  $colorMenu;
+                font-size: 16px;
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+.menuActive{
+    transform:  translateX(0);
+    -webkit-transform:  translateX(0);
+    -moz-transform:  translateX(0);
+    -ms-transform:  translateX(0);
+    -o-transform:  translateX(0);
+}
+
+.menu{
+    transform:  translate(-100%);
+    -webkit-transform:  translate(-100%);
+    -moz-transform:  translate(-100%);
+    -ms-transform:  translate(-100%);
+    -o-transform:  translate(-100%);
+
+}

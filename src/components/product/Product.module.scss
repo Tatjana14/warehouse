@@ -1,0 +1,28 @@
+@import '../../sass/basis/fonts';
+@import '../../sass/abstracts/mixins';
+@import '../../sass/abstracts/vars';
+
+
+.wrapper{
+    @include flexColumn();
+    float: left;
+    padding-top: 55px;
+    padding-left: 55px;
+    .title{
+        font-family: 'Roboto' , sans-serif;
+        color:  $colorPrice;
+        font-size: 28px;
+        font-weight: 100;
+        padding-bottom: 15px;
+    }
+    .subtitle{
+        font-family: 'Roboto' , sans-serif;
+        color:  $colorPrice;
+        font-size: 28px;
+        font-weight: 100;
+    }
+    .linkWrapper{
+        @include flex();
+        padding-top: 37px;
+    }
+}

@@ -1,0 +1,28 @@
+@import '../../sass/basis/fonts';
+@import '../../sass/abstracts/mixins';
+@import '../../sass/abstracts/vars';
+
+.wrapper{
+    @include flexColumn();
+    .iconWrapper{
+        @include flexColumn($align-items:center);
+        .img{
+            padding-bottom: 15px;
+        }
+        .subtitleImg{
+            font-family: 'Roboto' , sans-serif;
+            color:  $colorByProduct;
+            font-size: 17px;
+            font-weight: 700;
+        }
+    }
+    .sloganWrapper{
+        margin-top: 40px;
+        .titleSlogan{
+            font-family: 'Roboto' , sans-serif;
+            color:  $colorSlogan;
+            font-size: 58px;
+            font-weight: 100;
+        }
+    }
+}
