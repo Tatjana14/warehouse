@@ -8,8 +8,8 @@ function Product(props) {
             <span style={props.stylePrice} className={s.subtitle} >{props.productPrice}</span>
             <div style={props.styleLike} className={s.linkWrapper} >
                 <a className={s.linkLike} href="#"><img src={like} alt="Like"/></a>
-                <span style={props.linkActive} className={s.linkActive}>FAVED</span>
-                <span style={props.linkDisabled} className={s.linkDisabled}>ADD TO FAVED</span>
+                <span style={props.linkActive} className={`${s.subtitle} ${s.linkActive}`}>FAVED</span>
+                <span style={props.linkDisabled} className={`${s.subtitle} ${s.linkDisabled}`}>ADD TO FAVED</span>
             </div>
         </div>
     );

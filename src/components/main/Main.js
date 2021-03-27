@@ -27,7 +27,23 @@ import { useState } from 'react';
 import CollectionName from '../collectionName/CollectionName';
 
 import seven from '../../assets/img/sevenPots.png';
+import pot from '../../assets/img/pot.png';
+import jahaan from '../../assets/img/iconJahaan.png';
 
+import sofa from '../../assets/img/sofa.png';
+import rooms from '../../assets/img/rooms.png';
+
+import grinder from '../../assets/img/grinder.png';
+import amisha from '../../assets/img/iconAmisha.png';
+import shakers from '../../assets/img/shakers.png';
+import authentics from '../../assets/img/autentics.png';
+
+import karina from '../../assets/img/iconKarina.png';
+
+import potFooter from '../../assets/img/potFooter.png';
+import shakerFooter from '../../assets/img/shakerFooter.png';
+import plateFooter from '../../assets/img/plateFooter.png';
+import logo from '../../assets/img/squareFooter.png'
 
 function Main() {
     const [menuActive, setMenuActive] = useState(false);
@@ -120,13 +136,84 @@ function Main() {
             style= {{ backgroundColor: "#f5f5f5"}}
             src={seven} 
             alt="Seven Pots"/>
-            <div  className={`${s.potsWrapper} ${s.productWrapper} `}>
-                <div className={s.potsContainer} >
-                <Product
-                    productName = "CKettle Thermo Pot"
-                    productPrice = "274.50 &#36;"
-                    linkActive = {{ display: "none"}}
+            <div className={s.potsWrapper}>
+                <div className={`${s.container} ${s.potsContainer}`} >
+                    <Product
+                        productName = "Kettle Thermo Pot"
+                        productPrice = "274.50 &#36;"
+                        linkActive = {{ display: "none"}}
+                        />
+                    <img className={s.imgPots} src={pot} alt="Pot"/>
+                    <Slogan
+                        styleWrapperSlogan = {{ maxWidth: "185px", paddingTop: "80px", paddingBottom: "60px"}}
+                        imgSrc={jahaan}
+                        imgAlt="NOOR JAHAAN"
+                        nameProduction="BY NOOR JAHAAN"
+                        sloganOne="Tea"
+                        sloganTwo="O’Clock"
                     />
+                </div>
+            </div>
+            <div className={s.roomsWrapper} >
+                <img className={s.sofaImg} src={sofa} alt="Sofa"/>
+                <img className={s.roomsImg} src={rooms} alt="Rooms"/>
+            </div>
+            <div className={s.grindlerWrapper}>
+                <div className={`${s.container} ${s.grindlerContainer}`}>
+                    <Product
+                        productName = "Salt &amp; Pepper  Grinder"
+                        productPrice = "75.50 &#36;"
+                        linkDisabled = {{ display: "none"}}
+                        />
+                    <img className={s.imgGrinder} src={grinder} alt="Grinder"/>
+                    <Slogan
+                        styleWrapperSlogan = {{ maxWidth: "210px", paddingTop: "70px", paddingBottom: "55px"}}
+                        imgSrc={amisha}
+                        imgAlt="BY AMISHA PATEL"
+                        nameProduction="BY AMISHA PATEL"
+                        sloganOne="Ebony &amp;"
+                        sloganTwo="Ivory"
+                    />
+                </div>
+            </div>
+            <CollectionName
+            style= {{ backgroundColor: "#f5f5f5"}}
+            src={shakers} 
+            alt="Shakers"/>
+            <CollectionName
+            src={authentics} 
+            alt="Authentics"/>
+            <div className={s.bowlWrapper}>
+                <div className={`${s.container} ${s.bowlContainer}`}>
+                    <Product
+                        productName = "Generic Oak Bowl"
+                        productPrice = "87.49 &#36;"
+                        linkDisabled = {{ display: "none"}}
+                        />
+                    <Slogan
+                        styleWrapperSlogan = {{ maxWidth: "230px", paddingTop: "75px", paddingBottom: "58px"}}
+                        imgSrc={karina}
+                        imgAlt="BY KARINA KAPOOR"
+                        nameProduction="BY KARINA KAPOOR"
+                        sloganOne="Back"
+                        sloganTwo="to Basics"
+                    />
+                </div>
+            </div>
+            <div className={s.footer} >
+                <div className={`${s.container} ${s.footerContainer}`}>
+                    <div className={s.footerInformation} >
+                        <div className={s.footerImages} >
+                            <img className={s.footerImg} src={potFooter} alt="Pot"/>
+                            <img  className={s.footerImg} src={shakerFooter} alt="Shaker"/>
+                            <img  className={s.footerImg} src={plateFooter} alt="Plate"/>
+                        </div>
+                        <p className={s.footerInfo}>2014 WARE HOUSE, USA based company. Image right belong to their respective owners.</p>
+                    </div>
+                    <div className={s.footerLogo}>
+                        <img className={s.imgLogo} src={logo} alt="Logo"/>
+                        <h2 className={s.titleLogo}>warehouse</h2>
+                    </div>
                 </div>
             </div>
         </div>
