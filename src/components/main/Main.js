@@ -129,7 +129,6 @@ function Main() {
                 </div>
             </div>
             <div className={s.menuWrapper}>
-                <img src={design} alt="Design Room"/>
                 <Menu active={menuActive} setActive={setMenuActive} title = "WAREHOUSE" items = {items}/>
             </div>
             <CollectionName
@@ -140,8 +139,7 @@ function Main() {
                 <div className={`${s.container} ${s.potsContainer}`} >
                     <Product
                         productName = "Kettle Thermo Pot"
-                        productPrice = "274.50 &#36;"
-                        linkActive = {{ display: "none"}}
+                        productPrice = "274.50 &#36;"                        
                         />
                     <img className={s.imgPots} src={pot} alt="Pot"/>
                     <Slogan
@@ -163,7 +161,6 @@ function Main() {
                     <Product
                         productName = "Salt &amp; Pepper  Grinder"
                         productPrice = "75.50 &#36;"
-                        linkDisabled = {{ display: "none"}}
                         />
                     <img className={s.imgGrinder} src={grinder} alt="Grinder"/>
                     <Slogan
@@ -188,7 +185,6 @@ function Main() {
                     <Product
                         productName = "Generic Oak Bowl"
                         productPrice = "87.49 &#36;"
-                        linkDisabled = {{ display: "none"}}
                         />
                     <Slogan
                         styleWrapperSlogan = {{ maxWidth: "230px", paddingTop: "75px", paddingBottom: "58px"}}

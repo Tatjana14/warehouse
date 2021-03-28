@@ -3,7 +3,7 @@ import './Menu.scss';
 
 function Menu({title, items, active, setActive}) {
     return (
-            <div className={active? 'menuActive' : 'menu'} >
+            <nav className={active? 'menuActive' : 'menu'} >
                 <a className='btnClose' onClick={() => setActive(false)}><img src={close} alt="Close button"/></a>
                 <p className='title'>{title}</p>
                 <ul className='menuList'>
@@ -14,7 +14,7 @@ function Menu({title, items, active, setActive}) {
                         </li>
                     )}
                 </ul>
-            </div>
+            </nav>
     );
 }
 

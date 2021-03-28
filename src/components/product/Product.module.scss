@@ -23,6 +23,19 @@
     .linkWrapper{
         @include flex();
         padding-top: 37px;
+        .buttonLike,
+        .buttonLikeActive{
+            width: 18px;
+            height: 18px;
+            background-position: center;
+            outline: none;
+        }
+        .buttonLike{
+            background: url('../../assets/img/like.png') no-repeat;
+        }
+        .buttonLikeActive{
+            background: url('../../assets/img/likeActive.png') no-repeat;
+        }
         .linkDisabled,
         .linkActive{
             font-size: 17px;
