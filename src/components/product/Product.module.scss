@@ -21,7 +21,8 @@
         font-weight: 100;
     }
     .linkWrapper{
-        @include flex();
+        display: flex;
+        justify-content: center;  
         padding-top: 37px;
         .buttonLike,
         .buttonLikeActive{
@@ -32,9 +33,11 @@
         }
         .buttonLike{
             background: url('../../assets/img/like.png') no-repeat;
+            background-position: center center;
         }
         .buttonLikeActive{
             background: url('../../assets/img/likeActive.png') no-repeat;
+            background-position: center center;
         }
         .linkDisabled,
         .linkActive{

@@ -1,5 +1,4 @@
 import s from'./Product.module.scss';
-import like from '../../assets/img/like.png';
 import { useState } from 'react';
 
 function Product(props) {

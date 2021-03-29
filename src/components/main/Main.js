@@ -6,11 +6,8 @@ import peppers from '../../assets/img/pappersss.png';
 import Slogan from '../slogan/Slogan';
 
 import materia from '../../assets/img/iconMateria.png'
-import home from '../../assets/img/home.png';
-import like from '../../assets/img/diamond.png';
-import search from '../../assets/img/search.png';
+
 import bottle from '../../assets/img/saltBottle.png';
-import design from '../../assets/img/designRoom.png';
 
 import Menu from '../menu/Menu';
 
@@ -22,18 +19,14 @@ import tableware from  '../../assets/img/tableware.png';
 import cutlery from  '../../assets/img/cutlery.png';
 import plants from  '../../assets/img/plants.png';
 
-import { useState } from 'react';
-
 import CollectionName from '../collectionName/CollectionName';
 
 import seven from '../../assets/img/sevenPots.png';
-import pot from '../../assets/img/pot.png';
 import jahaan from '../../assets/img/iconJahaan.png';
 
 import sofa from '../../assets/img/sofa.png';
 import rooms from '../../assets/img/rooms.png';
 
-import grinder from '../../assets/img/grinder.png';
 import amisha from '../../assets/img/iconAmisha.png';
 import shakers from '../../assets/img/shakers.png';
 import authentics from '../../assets/img/autentics.png';
@@ -46,7 +39,7 @@ import plateFooter from '../../assets/img/plateFooter.png';
 import logo from '../../assets/img/squareFooter.png'
 
 function Main() {
-    const [menuActive, setMenuActive] = useState(false);
+
     const items = [
         {id: "1",   
         value: "BOWLS & PANS", 
@@ -104,32 +97,14 @@ function Main() {
                         sloganOne="Good"
                         sloganTwo="Things come in Paris"
                     />
-                    <div className={s.headerNav}>
-                        <ul className={s.navigation}>
-                            <li className={s.navItem}>
-                                <a className={s.navLink} href="#" onClick={() => setMenuActive(!menuActive)}>
-                                    <img src={home} alt="Home"/>
-                                </a>
-                            </li>
-                            <li className={s.navItem}>
-                                <a className={s.navLink} href="#">
-                                    <img src={like} alt="Favored"/>
-                                </a>
-                            </li>
-                            <li className={s.navItem}>
-                                <a className={s.navLink} href="#">
-                                    <img src={search} alt="Search"/>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    
                     <div className={s.slider}>
                         <img className={s.slide} src={bottle} alt="Salt Bottle"/>
                     </div>
                 </div>
             </div>
             <div className={s.menuWrapper}>
-                <Menu active={menuActive} setActive={setMenuActive} title = "WAREHOUSE" items = {items}/>
+                <Menu title = "WAREHOUSE" items = {items}/>
             </div>
             <CollectionName
             style= {{ backgroundColor: "#f5f5f5"}}
@@ -141,7 +116,6 @@ function Main() {
                         productName = "Kettle Thermo Pot"
                         productPrice = "274.50 &#36;"                        
                         />
-                    <img className={s.imgPots} src={pot} alt="Pot"/>
                     <Slogan
                         styleWrapperSlogan = {{ maxWidth: "185px", paddingTop: "80px", paddingBottom: "60px"}}
                         imgSrc={jahaan}
@@ -162,7 +136,6 @@ function Main() {
                         productName = "Salt &amp; Pepper  Grinder"
                         productPrice = "75.50 &#36;"
                         />
-                    <img className={s.imgGrinder} src={grinder} alt="Grinder"/>
                     <Slogan
                         styleWrapperSlogan = {{ maxWidth: "210px", paddingTop: "70px", paddingBottom: "55px"}}
                         imgSrc={amisha}
