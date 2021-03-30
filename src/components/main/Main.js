@@ -106,10 +106,12 @@ function Main() {
             <div className={s.menuWrapper}>
                 <Menu title = "WAREHOUSE" items = {items}/>
             </div>
-            <CollectionName
-            style= {{ backgroundColor: "#f5f5f5"}}
-            src={seven} 
-            alt="Seven Pots"/>
+            <div className={s.sevenPots}>
+                <CollectionName
+                style= {{ backgroundColor: "#f5f5f5"}}
+                src={seven} 
+                alt="Seven Pots"/>
+            </div>
             <div className={s.potsWrapper}>
                 <div className={`${s.container} ${s.potsContainer}`} >
                     <Product
@@ -146,13 +148,17 @@ function Main() {
                     />
                 </div>
             </div>
-            <CollectionName
-            style= {{ backgroundColor: "#f5f5f5"}}
-            src={shakers} 
-            alt="Shakers"/>
-            <CollectionName
-            src={authentics} 
-            alt="Authentics"/>
+            <div className={s.shakersWrapper}>
+                <CollectionName
+                style= {{ backgroundColor: "#f5f5f5"}}
+                src={shakers} 
+                alt="Shakers"/>
+            </div>
+            <div className={s.authenticsWrapper}>
+                <CollectionName
+                src={authentics} 
+                alt="Authentics"/>
+            </div>
             <div className={s.bowlWrapper}>
                 <div className={`${s.container} ${s.bowlContainer}`}>
                     <Product
