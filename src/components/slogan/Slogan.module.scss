@@ -27,3 +27,18 @@
         }
     }
 }
+
+@media screen and (max-width: 780px){
+    .wrapper{
+        .iconWrapper{
+            .subtitleImg{
+                font-size: 20px;
+            }
+        }
+        .sloganWrapper{
+            .titleSlogan{
+                font-size: 65px;
+            }
+        }
+    }
+}

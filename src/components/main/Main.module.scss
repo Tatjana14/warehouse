@@ -18,6 +18,10 @@
             justify-content: space-between;
             padding-left: calc(10px + (50 - 10) * ((100vw - 360px) / (1500 - 360)));
             padding-right: calc(10px + (155 - 10) * ((100vw - 360px) / (1500 - 360)));
+            .sloganHeader{
+                padding-top: 217px;
+                padding-bottom: 215px;
+            }
             .imgHeader {
                 z-index: 1;
                 padding-top: 170px;
@@ -32,6 +36,7 @@
                 height: 283px;
                 width: 343px;
                 left: 17%;
+                top: 0;
                 @include flex();
                 .slide {
                     transform: translateY(-50%);
@@ -186,7 +191,7 @@
 @media screen and (max-width: 1180px){
     .mainWrapper {
         grid-template-columns: repeat(1, minmax(360px, 1fr)) ;
-        grid-auto-rows: minmax(330px, 660px);
+        grid-auto-rows: minmax(330px, auto);
         .header{
             grid-area: 2/1/3/2;
         }
@@ -194,9 +199,11 @@
             grid-area: 1/1/2/2;
             background-size: auto;
             background-repeat: repeat-x;
+            min-height: 665px;
         }
         .sevenPots {
             grid-area: 3/1/4/2;
+            height: min-content;
         }
         .potsWrapper{
             grid-area: 4/1/5/2;
@@ -219,5 +226,96 @@
         .footer{
             grid-area: 10/1/11/2;
         }
+        
     }
 }
+
+@media screen and (max-width: 1080px){
+    .mainWrapper{
+    .potsWrapper {
+        background-position: 30% bottom;
+    }
+    .grindlerWrapper{
+        background-position: 35% bottom;
+    }
+    .bowlWrapper{
+        background-position: 75% bottom;
+    }
+}
+}
+@media screen and (max-width: 780px){
+    .mainWrapper{
+        .header{
+            .headerContainer{
+            flex-direction: column;
+            align-items: center;
+            padding-top: 160px;
+            .sloganHeader{
+                padding: 0 0 100px;
+            }
+            .imgHeader{
+                padding-top: 10px;
+                transform: scale(0.8);
+                -webkit-transform: scale(0.8);
+                -moz-transform: scale(0.8);
+                -ms-transform: scale(0.8);
+                -o-transform: scale(0.8);
+            }
+            .slider{
+                left: 50%;
+                transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+}
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 760px){
+    .container{
+        flex-direction: column;
+    }
+    .mainWrapper{
+        .potsWrapper {
+            background-position: 95% bottom;
+        }
+        .grindlerWrapper{
+            background-position: 95% bottom;
+        }
+        .bowlWrapper{
+            background-position: 20% bottom;
+            background-size: auto;
+            padding-bottom: 130px;
+        }
+    }
+}
+@media screen and (max-width: 690px){
+    .mainWrapper{
+        .bowlWrapper{
+            background-position: 45% bottom;
+            background-size: auto;
+        }
+    }
+}
+
+
+@media screen and (max-width: 615px){
+    .mainWrapper{
+        .potsContainer,
+        .grindlerContainer {
+            padding-bottom: 230px;
+        }
+    }
+    }
+
+    @media screen and (max-width: 470px){
+        .mainWrapper{
+            .bowlWrapper{
+                background-size: 230%;
+            }
+        }
+    }

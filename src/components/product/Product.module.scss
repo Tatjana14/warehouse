@@ -46,3 +46,23 @@
         }
     }
 }
+
+@media screen and (max-width: 780px){
+    .wrapper{
+        .title{
+            font-size: 40px;
+            font-weight: 300;
+        }
+        .subtitle{
+            font-size: 37px;
+            font-weight: 300;
+        }
+        .linkWrapper{
+            .linkDisabled,
+            .linkActive{
+            font-size: 22px;
+        }
+        }
+        
+}
+}

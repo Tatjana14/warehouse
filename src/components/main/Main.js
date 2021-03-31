@@ -88,8 +88,9 @@ function Main() {
                     styleLike = {{ display: "none"}}
                     />
                     <img className={s.imgHeader}  src={peppers} alt="Cork Salt"/>
+                    <div className={s.sloganHeader} >
                     <Slogan
-                        styleWrapperSlogan = {{ maxWidth: "330px", alignItems: "center" , paddingTop: "147px", paddingBottom: "215px"}}
+                        styleWrapperSlogan = {{ maxWidth: "330px", alignItems: "center"}}
                         imgSrc={materia}
                         imgAlt="BY MATERIA &amp; NENDO"
                         nameProduction="BY MATERIA &amp; NENDO"
@@ -97,6 +98,7 @@ function Main() {
                         sloganOne="Good"
                         sloganTwo="Things come in Paris"
                     />
+                    </div>
                     
                     <div className={s.slider}>
                         <img className={s.slide} src={bottle} alt="Salt Bottle"/>
