@@ -54,7 +54,6 @@
         }
     }
 }
-
 .menuActive{
     transform:  translateX(0);
     -webkit-transform:  translateX(0);
@@ -62,7 +61,6 @@
     -ms-transform:  translateX(0);
     -o-transform:  translateX(0);
 }
-
 .menu{
     display: none;
 }
@@ -93,7 +91,6 @@
         }
     }
 }
-
 .navWrapper{
     background-color: $secondaryBg;
     right: 0;
