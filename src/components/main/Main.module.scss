@@ -16,11 +16,17 @@
             z-index: 999;
             display: flex;
             justify-content: space-between;
+            align-items: start;
             padding-left: calc(10px + (50 - 10) * ((100vw - 360px) / (1500 - 360)));
             padding-right: calc(10px + (155 - 10) * ((100vw - 360px) / (1500 - 360)));
+            transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
             .sloganHeader{
-                padding-top: 217px;
-                padding-bottom: 215px;
+            padding-top: 217px;
+            padding-bottom: 215px;
             }
             .imgHeader {
                 z-index: 1;
@@ -165,16 +171,16 @@
 }
 }
 
-@media (min-width: 1181px) and (max-width: 1350px){
+@media (min-width: 1181px) and (max-width: 1500px){
     .mainWrapper{
         .headerContainer{
             .imgHeader{
-                transform: scale(0.6);
-                -webkit-transform: scale(0.6);
-                -moz-transform: scale(0.6);
-                -ms-transform: scale(0.6);
-                -o-transform: scale(0.6);
-            }
+                transform: scale(0.8);
+                -webkit-transform: scale(0.8);
+                -moz-transform: scale(0.8);
+                -ms-transform: scale(0.8);
+                -o-transform: scale(0.8);
+}
         }
         .potsWrapper {
             background-position: 30% bottom;
@@ -216,6 +222,14 @@
         }
         .grindlerWrapper{
             grid-area: 7/1/8/2;
+        }
+        .roomsWrapper{
+            overflow: scroll;
+            .sofaImg{
+            width: auto;
+            height: auto;
+            
+            }
         }
         .authenticsWrapper{
             grid-area: 8/1/9/2;
