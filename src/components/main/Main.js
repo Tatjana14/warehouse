@@ -36,7 +36,9 @@ import karina from '../../assets/img/iconKarina.png';
 import potFooter from '../../assets/img/potFooter.png';
 import shakerFooter from '../../assets/img/shakerFooter.png';
 import plateFooter from '../../assets/img/plateFooter.png';
-import logo from '../../assets/img/squareFooter.png'
+import logo from '../../assets/img/squareFooter.png';
+
+
 
 function Main() {
 
@@ -101,7 +103,7 @@ function Main() {
                     </div>
                     
                     <div className={s.slider}>
-                        <img className={s.slide} src={bottle} alt="Salt Bottle"/>
+                    
                     </div>
                 </div>
             </div>
