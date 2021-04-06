@@ -7,7 +7,7 @@ import Slogan from '../slogan/Slogan';
 
 import materia from '../../assets/img/iconMateria.png'
 
-import bottle from '../../assets/img/saltBottle.png';
+
 
 import Menu from '../menu/Menu';
 
@@ -38,7 +38,7 @@ import shakerFooter from '../../assets/img/shakerFooter.png';
 import plateFooter from '../../assets/img/plateFooter.png';
 import logo from '../../assets/img/squareFooter.png';
 
-
+import Slider from '../slider/Slider';
 
 function Main() {
 
@@ -103,7 +103,7 @@ function Main() {
                     </div>
                     
                     <div className={s.slider}>
-                    
+                        <Slider />
                     </div>
                 </div>
             </div>
@@ -123,7 +123,7 @@ function Main() {
                         productPrice = "274.50 &#36;"                        
                         />
                     <Slogan
-                        styleWrapperSlogan = {{ maxWidth: "185px", paddingTop: "80px", paddingBottom: "60px"}}
+                        styleWrapperSlogan = {{ maxWidth: "185px", paddingTop: "80px", paddingBottom: "55px"}}
                         imgSrc={jahaan}
                         imgAlt="NOOR JAHAAN"
                         nameProduction="BY NOOR JAHAAN"

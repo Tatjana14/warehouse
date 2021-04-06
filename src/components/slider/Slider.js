@@ -1,26 +1,30 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation} from 'swiper';
 import './Slider.scss';
+import bottle from '../../assets/img/saltBottle.png';
+
+SwiperCore.use([Navigation]);
 
 
 function Slider() {
     return (
-        <Swiper
-        slidesPerView = {1}
-        spaceBetween = {2}
-        navigation
-        >
-        <>
-            <SwiperSlide>
-                <img className={s.slide} src={bottle} alt="Salt Bottle"/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <img className={s.slide} src={bottle} alt="Salt Bottle"/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <img className={s.slide} src={bottle} alt="Salt Bottle"/>
-            </SwiperSlide>
-        </>
-        </Swiper>
+        <div className="sliderContainer">
+            <Swiper
+            slidesPerView={1}
+            navigation
+            >
+                <SwiperSlide>
+                    <img  className="img" src={bottle} alt="Salt Bottle"/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img className="img" src={bottle} alt="Salt Bottle"/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img className="img" src={bottle} alt="Salt Bottle"/>
+                </SwiperSlide>
+            </Swiper>
+        </div>
+
     );
 }
 
