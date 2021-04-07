@@ -47,7 +47,6 @@ position: relative;
 overflow: hidden;
 list-style: none;
 padding: 0;
-/* Fix of Webkit flickering */
 z-index: 1;
 }
 .swiper-container-vertical > .swiper-wrapper {
@@ -95,7 +94,6 @@ transition-property: transform;
 .swiper-slide-invisible-blank {
 visibility: hidden;
 }
-/* Auto Height */
 .swiper-container-autoheight {
 &,
 .swiper-slide {
